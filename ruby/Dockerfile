@@ -37,7 +37,7 @@ ENV PATH /home/admin/.rbenv/shims:/home/admin/.rbenv/bin:$PATH
 RUN curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-doctor | bash
 
 # Set ruby version
-ARG RUBY_VERSION=3.3.0
+ARG RUBY_VERSION=3.3.1
 
 RUN rbenv install ${RUBY_VERSION}
 RUN rbenv global ${RUBY_VERSION}
